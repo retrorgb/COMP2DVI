@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Component_to_DVI-A_Compact-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Component_to_DVI-A_Compact-eagle-import.lib)(options "")(descr ""))
-)
