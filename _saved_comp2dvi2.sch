@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L THS7368:THS7368 U1
+L comp2dvi2-rescue:THS7368-THS7368 U1
 U 1 1 5C9672D2
 P 5350 4500
 F 0 "U1" H 5350 5175 50  0000 C CNN
@@ -250,7 +250,7 @@ Y_OUT
 Text GLabel 8050 5150 0    50   Input ~ 0
 Pb_OUT
 $Comp
-L SCART_to_DVI-A_Compact-eagle-import:DVI-I-R J5
+L comp2dvi2-rescue:DVI-I-R-SCART_to_DVI-A_Compact-eagle-import J5
 U 1 1 5C96A17A
 P 8550 3750
 F 0 "J5" H 8878 3450 59  0000 L CNN
@@ -566,7 +566,7 @@ F 3 "~" H 4650 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch2:SW_DPDT_x2 SW2
+L comp2dvi2-rescue:SW_DPDT_x2-Switch2 SW2
 U 1 1 5CB6A3DC
 P 6200 5700
 F 0 "SW2" H 6200 5985 50  0000 C CNN

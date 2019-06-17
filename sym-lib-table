@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name comp2dvi2-rescue)(type Legacy)(uri ${KIPRJMOD}/comp2dvi2-rescue.lib)(options "")(descr ""))
+)
