@@ -1564,7 +1564,7 @@
     (tags "inductor handsolder")
     (path /5C9DC1AA)
     (attr smd)
-    (fp_text reference FB1 (at -0.014 -1.27) (layer F.SilkS)
+    (fp_text reference FB1 (at -2.891 -0.08) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 220Ω (at 0 1.43) (layer F.Fab)
