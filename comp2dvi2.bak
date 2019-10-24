@@ -181,17 +181,6 @@ Text GLabel 5050 3300 3    50   Input ~ 0
 VS+
 Text GLabel 5000 4450 0    50   Input ~ 0
 VS+
-$Comp
-L Switch:SW_DIP_x03 SW1
-U 1 1 5C999BAF
-P 5050 6250
-F 0 "SW1" H 5050 6717 50  0000 C CNN
-F 1 "SW_DIP_x03" H 5050 6626 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Piano_10.8x9.18mm_W7.62mm_P2.54mm" H 5050 6250 50  0001 C CNN
-F 3 "~" H 5050 6250 50  0001 C CNN
-	1    5050 6250
-	1    0    0    -1  
-$EndComp
 Text GLabel 5850 4950 2    50   Input ~ 0
 BYPASS
 Text GLabel 6000 4450 2    50   Input ~ 0
@@ -201,8 +190,6 @@ Text GLabel 4500 6050 0    50   Input ~ 0
 FILTER1
 Text GLabel 4500 6150 0    50   Input ~ 0
 FILTER2
-Text GLabel 4500 6250 0    50   Input ~ 0
-BYPASS
 Text GLabel 5350 6150 2    50   Input ~ 0
 5V
 Text Notes 4350 7200 0    50   ~ 0
@@ -317,7 +304,7 @@ U 1 1 5C9DA90A
 P 8100 1450
 F 0 "J4" H 8157 1917 50  0000 C CNN
 F 1 "USB_B_Micro" H 8157 1826 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 8250 1400 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 8250 1400 50  0001 C CNN
 F 3 "~" H 8250 1400 50  0001 C CNN
 	1    8100 1450
 	1    0    0    -1  
@@ -448,11 +435,6 @@ Wire Wire Line
 	6000 4550 6000 4450
 Wire Wire Line
 	5850 4450 6000 4450
-Wire Wire Line
-	5350 6050 5350 6150
-Connection ~ 5350 6150
-Wire Wire Line
-	5350 6150 5350 6250
 Text GLabel 5850 4350 2    50   Input ~ 0
 5V
 $Comp
@@ -544,8 +526,6 @@ Wire Wire Line
 	4750 6050 4550 6050
 Wire Wire Line
 	4500 6150 4650 6150
-Wire Wire Line
-	4750 6250 4500 6250
 Text GLabel 4650 5650 1    50   Input ~ 0
 GND
 Wire Wire Line
@@ -558,14 +538,9 @@ Wire Wire Line
 Connection ~ 4650 6150
 Wire Wire Line
 	4650 6150 4750 6150
-Connection ~ 4750 6250
 Wire Wire Line
 	4550 5800 4650 5800
 Connection ~ 4650 5800
-Wire Wire Line
-	4650 5800 4750 5800
-Wire Wire Line
-	4750 6000 4750 6250
 Wire Wire Line
 	4650 5800 4650 5650
 $Comp
@@ -591,14 +566,65 @@ F 3 "~" H 4650 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R12
-U 1 1 5CA79BA1
-P 4750 5900
-F 0 "R12" H 4750 6050 50  0000 L CNN
-F 1 "100K" H 4400 5950 50  0001 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 5900 50  0001 C CNN
-F 3 "~" H 4750 5900 50  0001 C CNN
-	1    4750 5900
+L Switch2:SW_DPDT_x2 SW2
+U 1 1 5CB6A3DC
+P 6200 5700
+F 0 "SW2" H 6200 5985 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 6200 5894 50  0000 C CNN
+F 2 "Component to DVI-A Compact:JS202011" H 6200 5700 50  0001 C CNN
+F 3 "~" H 6200 5700 50  0001 C CNN
+	1    6200 5700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5350 6050 5350 6150
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 5CB6B0AE
+P 5050 6150
+F 0 "SW1" H 5050 6517 50  0000 C CNN
+F 1 "SW_DIP_x02" H 5050 6426 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Piano_10.8x6.64mm_W7.62mm_P2.54mm" H 5050 6150 50  0001 C CNN
+F 3 "~" H 5050 6150 50  0001 C CNN
+	1    5050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5CB6B46D
+P 5850 5600
+F 0 "R12" H 5750 5750 50  0000 L CNN
+F 1 "100K" H 5600 5600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5850 5600 50  0001 C CNN
+F 3 "~" H 5850 5600 50  0001 C CNN
+	1    5850 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 5700 0    50   Input ~ 0
+BYPASS
+Wire Wire Line
+	6400 5950 6550 5950
+Wire Wire Line
+	6400 5600 6550 5600
+Wire Wire Line
+	5700 5700 5850 5700
+Wire Wire Line
+	6550 5600 6550 5950
+Wire Wire Line
+	6000 5700 6000 6050
+Connection ~ 6000 5700
+Connection ~ 5850 5700
+Wire Wire Line
+	5850 5700 6000 5700
+Text GLabel 5850 5350 1    50   Input ~ 0
+GND
+Wire Wire Line
+	5850 5500 5850 5350
+Wire Wire Line
+	6400 5800 6400 6150
+Wire Wire Line
+	6400 6150 6550 6150
+Connection ~ 6400 6150
+Text GLabel 6550 6150 2    50   Input ~ 0
+5V
 $EndSCHEMATC
